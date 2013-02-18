@@ -24,7 +24,7 @@ describe "Sinup" do
 			page.should have_content("Seu cadastrado foi realizado com sucesso!")
 		end
 
-		xit "logins with created account" do
+		it "logins with created account" do
 
 			#helper spec/support/helpers/integrations.rb
 			login :with => "cefs1984@gmail.com"

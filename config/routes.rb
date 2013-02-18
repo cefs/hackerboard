@@ -9,6 +9,6 @@ Hackerboard::Application.routes.draw do
   controller :sessions do
     get   "/login", :action => :new
     post  "/login", :action => :create, :as => false
+    get   "/logout", :action => :destroy
   end
-
 end
