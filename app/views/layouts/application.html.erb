@@ -7,14 +7,10 @@
 </head>
 <body>
 
-	<nav>
-		<ul>
-			<li><%=link_to t("nav.sigup"), signup_path %></li>
-		</ul>
-	</nav>
+	<%= render "shared/header" %>
+	<%= render "shared/flash_messages" %>
+	<%= yield %>
 
-<%= yield %>
-
-<%= javascript_include_tag "application" %>
+<%#= javascript_include_tag "application" %>
 </body>
 </html>

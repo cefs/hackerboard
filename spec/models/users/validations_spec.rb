@@ -3,7 +3,6 @@ require "spec_helper"
 describe User, "validations" do
 	
 	#USANDO MATCHERS PERSONALIZADOS => spec/support/allow.rb
-
 	#it nestes casos, fazem referência ao User passado no describe
 
 	it { should allow("John").for(:name) }
@@ -16,13 +15,8 @@ describe User, "validations" do
 	it { should_not allow(nil).for(:password) }
 
 	context "e-mail uniqueness" do
-		let!(:user){
-			User.create!(
-				:name  => "Carlos Eduardo",
-				:email => "cefs1984@gmail.com",
-				:password => "test",
-				:password_confirmation => "test"
-			)}
+		
+		let!(:user) { users(:carlos) }
 
 		# it é o context atual, no caso seria o let!(:user) que 
 		# guarda em cache as informações dentro deste context
