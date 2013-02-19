@@ -6,7 +6,7 @@ describe "Create question" do
    context "whe logged" do
 
       let!(:user) { users(:carlos) }
-      let!(:category) { FactoryGirl.create(:category) }
+      let!(:category) { categories(:ruby) }
 
       context "with valid data" do
          before do

@@ -8,6 +8,7 @@ class User < ActiveRecord::Base
 	validates_confirmation_of	:password
 
 	has_many :questions
+	has_many :replies
 
 	def password=(password)
 		encryption = PasswordEncryptor.encrypt(password)
