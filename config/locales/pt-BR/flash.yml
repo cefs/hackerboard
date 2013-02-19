@@ -1,5 +1,9 @@
 pt-BR:
  flash:
+  auth:
+    alert: "Você precisa fazer o login para acessar esta página."
+
+
   users:
    create:
     notice: "Seu cadastrado foi realizado com sucesso!"
@@ -8,3 +12,7 @@ pt-BR:
    create:
     notice: "Que bom que você voltou!"
     alert: "E-mail/Senha inválidos"   
+
+  questions:
+   create:
+    notice: "Sua pergunta foi adicionada com sucesso!"

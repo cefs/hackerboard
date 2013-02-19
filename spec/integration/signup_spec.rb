@@ -8,7 +8,7 @@ describe "Sinup" do
 			visit "/"
 			click_link "Cadastra-se"
 
-			fill_in "Nome completo",		:with => "Carlos Eduardo Fernandes Silva"
+			fill_in "Nome completo",	:with => "Carlos Eduardo Fernandes Silva"
 			fill_in "E-mail",				:with => "cefs1984@gmail.com"
 			fill_in "Senha",				:with => "test"
 			fill_in "Confirmação de senha",	:with => "test"
