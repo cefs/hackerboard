@@ -3,7 +3,6 @@ pt-BR:
   auth:
     alert: "Você precisa fazer o login para acessar esta página."
 
-
   users:
    create:
     notice: "Seu cadastrado foi realizado com sucesso!"
@@ -16,3 +15,8 @@ pt-BR:
   questions:
    create:
     notice: "Sua pergunta foi adicionada com sucesso!"
+
+  replies:
+    create:
+      notice: "Sua resposta foi adicionada!"
+      alert: "Você precisa preencher sua resposta."
