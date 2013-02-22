@@ -1,4 +1,6 @@
 class RepliesController < ApplicationController
+   require_logged_user
+
    def create
       @question = Question.find(params[:question_id])
       @reply = current_user.replies.new(params[:reply])
